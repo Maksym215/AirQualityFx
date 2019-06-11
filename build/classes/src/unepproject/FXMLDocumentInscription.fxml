@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.media.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="authenificationpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="441.0" prefWidth="776.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="src.unepproject.FXMLDocumentControllerInscription">
+   <children>
+      <MediaView fx:id="mediaView" fitHeight="466.0" fitWidth="800.0" layoutX="31.0" layoutY="34.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="-0.0" AnchorPane.topAnchor="0.0" />
+      <Pane layoutX="415.0" layoutY="5.0" prefHeight="406.0" prefWidth="329.0" style="-fx-background-color: #ffffff67; -fx-background-radius: 65px;">
+         <children>
+            <ImageView fitHeight="101.0" fitWidth="82.0" layoutX="125.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asset/UNEP_logo.svg.png" />
+               </image>
+            </ImageView>
+            <JFXPasswordField fx:id="passwordTF" alignment="CENTER" focusColor="#00546b" focusTraversable="false" labelFloat="true" layoutX="77.0" layoutY="304.0" prefHeight="37.0" prefWidth="181.0" promptText="PASSWORD" style="-fx-border-color: #FFF; -fx-border-radius: 50px;" unFocusColor="#005469db" />
+            <JFXTextField fx:id="fristnameTF" alignment="CENTER" focusColor="#00546b" focusTraversable="false" labelFloat="true" layoutX="74.0" layoutY="159.0" prefHeight="38.0" prefWidth="183.0" promptText="FRIST NAME" style="-fx-border-color: #FFF; -fx-border-radius: 50px;" unFocusColor="#005469db" />
+            <JFXButton fx:id="submitbtn" layoutX="128.0" layoutY="348.0" onAction="#submitbtn" prefHeight="44.0" prefWidth="82.0" style="-fx-background-color: #00b3ed; -fx-background-radius: 50px;" text="SUBMIT" textFill="WHITE" />
+            <Label layoutX="30.0" layoutY="124.0" text="WELCOME TO UNEP AIR QUALITY" textFill="#00546b">
+               <font>
+                  <Font name="AppleGothic Regular" size="17.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="lastnameTF1" alignment="CENTER" focusColor="#00546b" focusTraversable="false" labelFloat="true" layoutX="75.0" layoutY="205.0" prefHeight="38.0" prefWidth="183.0" promptText="LAST NAME" style="-fx-border-color: #FFF; -fx-border-radius: 50px;" unFocusColor="#005469db" />
+            <JFXTextField fx:id="emailTF" alignment="CENTER" focusColor="#00546b" focusTraversable="false" labelFloat="true" layoutX="77.0" layoutY="257.0" prefHeight="38.0" prefWidth="183.0" promptText="EMAIL" style="-fx-border-color: #FFF; -fx-border-radius: 50px;" unFocusColor="#005469db" />
+         </children>
+         <effect>
+            <DropShadow color="#757575d1" />
+         </effect>
+      </Pane>
+   </children>
+</AnchorPane>

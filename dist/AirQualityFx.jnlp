@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="AirQualityFx.jnlp">
+  <information>
+    <title>AirQualityFx</title>
+    <vendor>apoll</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <jfx:javafx-runtime version="8.0+" href="http://javadl.sun.com/webapps/download/GetFile/javafx-latest/windows-i586/javafx2.jnlp"/>
+  </resources>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="AirQualityFx.jar" size="65003843" download="eager" />
+    <jar href="lib/SPARQL-JAVA.jar" size="22967" download="eager" />
+    <jar href="lib/commons-codec-1.11.jar" size="335042" download="eager" />
+    <jar href="lib/commons-logging-1.2.jar" size="61829" download="eager" />
+    <jar href="lib/controlsfx-8.40.11.jar" size="985420" download="eager" />
+    <jar href="lib/fluent-hc-4.5.8.jar" size="31542" download="eager" />
+    <jar href="lib/httpclient-4.5.8.jar" size="772386" download="eager" />
+    <jar href="lib/httpclient-cache-4.5.8.jar" size="161842" download="eager" />
+    <jar href="lib/httpclient-osgi-4.5.8.jar" size="1360615" download="eager" />
+    <jar href="lib/httpclient-win-4.5.8.jar" size="17847" download="eager" />
+    <jar href="lib/httpcore-4.4.11.jar" size="326874" download="eager" />
+    <jar href="lib/httpmime-4.5.8.jar" size="41787" download="eager" />
+    <jar href="lib/itextpdf-5.1.0.jar" size="1614453" download="eager" />
+    <jar href="lib/java-json.jar" size="84697" download="eager" />
+    <jar href="lib/jfoenix-8.0.8.jar" size="2708772" download="eager" />
+    <jar href="lib/jna-4.5.2.jar" size="1484022" download="eager" />
+    <jar href="lib/jna-platform-4.5.2.jar" size="2327597" download="eager" />
+    <jar href="lib/json_simple-1.1.jar" size="16046" download="eager" />
+    <jar href="lib/openjfx-dialogs-1.0.3.jar" size="149178" download="eager" />
+    <jar href="lib/org.json.simple-0.3-incubating-sources.jar" size="5096" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="AirQualityFx" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="src.unepproject.Unepproject"  name="AirQualityFx" />
+  <update check="always"/>
+</jnlp>

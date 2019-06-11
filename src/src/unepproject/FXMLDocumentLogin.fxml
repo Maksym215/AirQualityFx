@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.media.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="authenificationpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="441.0" prefWidth="776.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="src.unepproject.FXMLDocumentControllerLogin">
+   <children>
+      <MediaView fx:id="mediaView" fitHeight="466.0" fitWidth="800.0" layoutX="31.0" layoutY="34.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="-0.0" AnchorPane.topAnchor="0.0" />
+      <Pane layoutX="415.0" layoutY="5.0" prefHeight="406.0" prefWidth="329.0" style="-fx-background-color: #ffffff67; -fx-background-radius: 65px;">
+         <children>
+            <ImageView fitHeight="101.0" fitWidth="82.0" layoutX="125.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asset/UNEP_logo.svg.png" />
+               </image>
+            </ImageView>
+            <JFXPasswordField fx:id="passwordTF" alignment="CENTER" focusColor="#00546b" focusTraversable="false" labelFloat="true" layoutX="75.0" layoutY="198.0" prefHeight="37.0" prefWidth="181.0" promptText="PASSWORD" style="-fx-border-color: #FFF; -fx-border-radius: 50px;" unFocusColor="#005469db" />
+            <JFXTextField fx:id="usernameTF" alignment="CENTER" focusColor="#00546b" focusTraversable="false" labelFloat="true" layoutX="73.0" layoutY="136.0" prefHeight="38.0" prefWidth="183.0" promptText="USER EMAIL" style="-fx-border-color: #FFF; -fx-border-radius: 50px;" unFocusColor="#005469db" />
+            <JFXButton fx:id="loginbtn" layoutX="84.0" layoutY="249.0" onAction="#loginbtn" prefHeight="44.0" prefWidth="82.0" style="-fx-background-color: #00b3ed; -fx-background-radius: 50px;" text="Log In" textFill="WHITE" />
+            <JFXButton fx:id="signbtn" layoutX="176.0" layoutY="251.0" onAction="#signupbtn" prefHeight="40.0" prefWidth="82.0" style="-fx-background-color: #00b3ed; -fx-background-radius: 50px;" text="Sign Up" textFill="#eeeded" />
+            <JFXButton layoutX="104.0" layoutY="347.0" onAction="#motdepasseoub" prefHeight="26.0" prefWidth="126.0" text="Forgot password" textFill="#00546b" underline="true" />
+            <JFXButton id="fb" fx:id="fbbtn" layoutX="77.0" layoutY="304.0" onAction="#facebookaccess" prefHeight="37.0" prefWidth="181.0" style="-fx-background-image: url('asset/fb.png');" stylesheets="@style.css" text=" " />
+         </children>
+         <effect>
+            <DropShadow color="#757575d1" />
+         </effect>
+      </Pane>
+   </children>
+</AnchorPane>
